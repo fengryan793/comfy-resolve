@@ -31,3 +31,5 @@
   `toScript()` with `hf download` fast path and node-pack cloning), src/verify.ts (size +
   safetensors header). CLI gained download / script / verify. 7 new tests against a local
   Range-capable HTTP server; first CI run on GitHub was green.
+- Live smoke of the online path (Manager + HF index + HF search + candidates) passed; see Verification.
+- Next: M5 (README polish, CHANGELOG, `npm publish --dry-run`, 0.1.0), then M6 dogfood.

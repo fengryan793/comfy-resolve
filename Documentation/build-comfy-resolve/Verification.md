@@ -23,3 +23,10 @@
 - Found and fixed: a 4-5 s "stall" in two tests was vitest deep-equality on 3 MB Buffers, not the
   downloader (instrumented phases: fetch→pipeline→digest→rename = 25 ms).
 - GitHub Actions run 1 (commit 4deb610): success on Node 20 and 22. PASS.
+- M3 live smoke (2026-10-18, real network, fresh cache dir): `resolve klein_upscale.json` took 3.3 s,
+  fetched Manager model-list (289 KB) + extension-node-map (2.5 MB) with ETag meta, built the HF
+  org index (79 KB), resolved the `ImageCASharpening+` pack live (cubiq/ComfyUI_essentials),
+  and listed 6 HF candidates for the unresolved `qwen_3_8b.safetensors` (same-stem + browse).
+  `candidates "Wan-Lighting\Wan2.1 - lightx2v_...rank256_bf16.safetensors"` returned the bundled
+  exact hit (Kijai/WanVideo_comfy) in 1 s plus 5 browse guesses. PASS.
+- Live Civitai path exercised only indirectly (no civitai hit in that run). PARTIAL.
