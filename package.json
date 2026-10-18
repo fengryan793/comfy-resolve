@@ -2,19 +2,49 @@
   "name": "comfy-resolve",
   "version": "0.1.0",
   "description": "Resolve a ComfyUI workflow's required models and custom nodes to download sources, then fetch and verify them. TypeScript library + CLI, zero runtime dependencies.",
-  "keywords": ["comfyui", "workflow", "models", "safetensors", "huggingface", "civitai", "lora", "checkpoint", "manifest", "cli"],
+  "keywords": [
+    "comfyui",
+    "workflow",
+    "models",
+    "safetensors",
+    "huggingface",
+    "civitai",
+    "lora",
+    "checkpoint",
+    "manifest",
+    "cli"
+  ],
   "license": "MIT",
   "author": "Ryan Feng",
-  "repository": { "type": "git", "url": "git+https://github.com/fengryan793/comfy-resolve.git" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengryan793/comfy-resolve.git"
+  },
   "homepage": "https://github.com/fengryan793/comfy-resolve#readme",
-  "bugs": { "url": "https://github.com/fengryan793/comfy-resolve/issues" },
+  "bugs": {
+    "url": "https://github.com/fengryan793/comfy-resolve/issues"
+  },
   "type": "module",
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
-  "bin": { "comfy-resolve": "./dist/cli.js" },
-  "files": ["dist", "data", "README.md", "LICENSE"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "comfy-resolve": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "data",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
