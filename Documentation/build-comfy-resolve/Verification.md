@@ -17,3 +17,9 @@
   (2 resolved, 1 unresolved, exit 3), `nodes windows_paths.json --offline` with an empty cache
   (all unresolved, exit 3 - expected: offline mode has no Manager data until one online run). PASS.
 - Not yet verified: live HF/Civitai search paths (M3), download/verify (M4), publish (M5).
+- M4: 38/38 tests (download resume verified byte-exact via Buffer.equals; hash mismatch deletes
+  the file; 404 reported; auto skipped; Civitai token only sent to civitai URLs; verify flags
+  bad-header/too-small/partial and ignores put_* placeholders). PASS.
+- Found and fixed: a 4-5 s "stall" in two tests was vitest deep-equality on 3 MB Buffers, not the
+  downloader (instrumented phases: fetch→pipeline→digest→rename = 25 ms).
+- GitHub Actions run 1 (commit 4deb610): success on Node 20 and 22. PASS.

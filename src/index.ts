@@ -18,3 +18,7 @@ export type { CivitaiOptions } from "./catalog/civitai.js";
 export { hfUrl, civitaiUrl, entryToResolution } from "./catalog/types.js";
 export type { ModelSource, NodeSource, CatalogEntry } from "./catalog/types.js";
 export { defaultCacheDir, cachedJson } from "./cache.js";
+export { downloadManifest, toScript, targetPath } from "./download.js";
+export type { DownloadOptions, DownloadResult, DownloadProgress, DownloadStatus } from "./download.js";
+export { verifyModelsDir, checkSafetensorsHeader } from "./verify.js";
+export type { VerifyIssue, VerifyOptions, VerifyProblem } from "./verify.js";

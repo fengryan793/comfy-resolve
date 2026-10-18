@@ -7,6 +7,9 @@ import { loadOverrides } from "./catalog/overrides.js";
 import { formatBytes, toTsv, writeManifest, destDir } from "./manifest.js";
 import { loadWorkflow } from "./parse.js";
 import { makeModelRef } from "./refs.js";
+import { downloadManifest, toScript, type DownloadProgress, type DownloadResult } from "./download.js";
+import { readManifest } from "./manifest.js";
+import { verifyModelsDir } from "./verify.js";
 import { createResolver, type ResolverOptions } from "./resolve.js";
 import type { Manifest, Requirements } from "./types.js";
 
@@ -18,12 +21,21 @@ Usage:
                            [--overrides file] [--installed pack,pack] [--json]
   comfy-resolve nodes      <workflow.json> [--json]
   comfy-resolve candidates <model-filename> [--limit 6] [--json]
+  comfy-resolve download   <manifest.json> --models-dir <dir> [--concurrency 3] [--only a,b]
+                           [--no-verify] [--dry-run] [--json]
+  comfy-resolve script     <manifest.json> [--models-dir /workspace/ComfyUI/models]   # bash for a pod
+  comfy-resolve verify     --models-dir <dir> [--json]
 
 Options:
   --offline          never touch the network (bundled table, overrides, cache only)
   --overrides <f>    JSON {"file.safetensors": {"url"|"hf"+"path"|"civitai", "dest"}}
   --installed <l>    comma list of custom_nodes folders already present (left out of the manifest)
   --cache-dir <d>    where catalogs are cached (default ~/.cache/comfy-resolve)
+  --models-dir <d>   ComfyUI's models/ directory (download, script, verify)
+  --concurrency <n>  parallel downloads (default 3)
+  --only <l>         comma list of basenames to download
+  --no-verify        skip SHA-256 checks even when the manifest knows the hash
+  --dry-run          show what would be downloaded
   --json             machine-readable output
   -h, --help         this help
 
@@ -44,6 +56,11 @@ const { values, positionals } = parseArgs({
     out: { type: "string", short: "o" },
     tsv: { type: "string" },
     limit: { type: "string" },
+    "models-dir": { type: "string" },
+    concurrency: { type: "string" },
+    only: { type: "string" },
+    "no-verify": { type: "boolean" },
+    "dry-run": { type: "boolean" },
   },
 });
 
@@ -147,6 +164,48 @@ async function main(): Promise<number> {
         if (!best && !list.length) process.stdout.write("no candidates found\n");
       }
       return best || list.length ? 0 : 3;
+    }
+    case "download": {
+      if (!target) die("download: missing <manifest.json>\n\n" + USAGE);
+      const modelsDir = values["models-dir"];
+      if (!modelsDir) die("download: --models-dir is required");
+      const manifest = await readManifest(target);
+      let lastLine = "";
+      const results = await downloadManifest(manifest, {
+        modelsDir,
+        concurrency: Number(values.concurrency ?? 3),
+        ...(values.only ? { only: values.only.split(",").map((s) => s.trim()).filter(Boolean) } : {}),
+        verify: !values["no-verify"],
+        dryRun: Boolean(values["dry-run"]),
+        ...(values.json ? {} : { onProgress: (p: DownloadProgress) => {
+          const pct = p.total ? ` ${Math.floor((p.received / p.total) * 100)}%` : "";
+          const line = `  ${p.model.basename}${pct} ${formatBytes(p.received)}`;
+          if (line !== lastLine && process.stderr.isTTY) { process.stderr.write("\r" + line.padEnd(100)); lastLine = line; }
+        } }),
+        ...(values.json ? {} : { onResult: (r: DownloadResult) => {
+          if (process.stderr.isTTY) process.stderr.write("\r" + "".padEnd(100) + "\r");
+          const extra = r.status === "failed" ? ` - ${r.error}` : r.status === "ok" ? ` (${formatBytes(r.bytes)}${r.resumedFrom ? ", resumed" : ""}${r.sha256 && r.model.sha256 ? ", sha256 ok" : ""})` : "";
+          process.stdout.write(`${r.status.padEnd(8)} ${r.model.basename}${extra}\n`);
+        } }),
+      });
+      if (values.json) process.stdout.write(JSON.stringify(results, null, 2) + "\n");
+      const failed = results.filter((r) => r.status === "failed").length;
+      if (manifest.unresolvedModels.length) process.stdout.write(`note: ${manifest.unresolvedModels.length} unresolved model(s) not downloaded\n`);
+      return failed ? 3 : 0;
+    }
+    case "script": {
+      if (!target) die("script: missing <manifest.json>\n\n" + USAGE);
+      process.stdout.write(toScript(await readManifest(target), values["models-dir"] ?? "/workspace/ComfyUI/models"));
+      return 0;
+    }
+    case "verify": {
+      const modelsDir = values["models-dir"] ?? target;
+      if (!modelsDir) die("verify: --models-dir is required");
+      const issues = await verifyModelsDir(modelsDir);
+      if (values.json) process.stdout.write(JSON.stringify(issues, null, 2) + "\n");
+      else if (!issues.length) process.stdout.write(`ok: no problems under ${modelsDir}\n`);
+      else for (const i of issues) process.stdout.write(`${i.problem.padEnd(11)} ${i.path}  (${i.detail})\n`);
+      return issues.length ? 3 : 0;
     }
     default:
       die(`unknown command "${cmd}"\n\n` + USAGE);

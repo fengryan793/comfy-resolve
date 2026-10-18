@@ -26,3 +26,8 @@
   (pack downloads the file itself, e.g. ReActor's GFPGAN/CodeFormer) to keep parity.
 - CLI: analyze / resolve / nodes / candidates with --json, --offline, --overrides, --installed,
   --cache-dir, -o, --tsv; exit codes 0/2/3.
+- M4: src/download.ts (streamed .part + rename, Range resume, 416/200-ignores-Range handling,
+  SHA-256 on the fly or post-hoc when resumed, concurrency, per-host tokens, dry-run, bash
+  `toScript()` with `hf download` fast path and node-pack cloning), src/verify.ts (size +
+  safetensors header). CLI gained download / script / verify. 7 new tests against a local
+  Range-capable HTTP server; first CI run on GitHub was green.

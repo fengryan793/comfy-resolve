@@ -35,6 +35,15 @@ comfy-resolve nodes wan_i2v.json
 
 # a file nobody could find: ranked HF / Civitai guesses, incl. renamed files
 comfy-resolve candidates "Wan2.1 - lightx2v_I2V_14B_480p_cfg_step_distill_rank256_bf16.safetensors"
+
+# fetch everything (resumable .part files, SHA-256 checked when known, 3 in parallel)
+comfy-resolve download manifest.json --models-dir ~/ComfyUI/models
+
+# no Node on the GPU box? print a bash script instead (uses `hf download` when present)
+comfy-resolve script manifest.json --models-dir /workspace/ComfyUI/models > provision.sh
+
+# find truncated / corrupt weights (size + safetensors header check)
+comfy-resolve verify --models-dir ~/ComfyUI/models
 ```
 
 Exit codes: `0` ok · `2` workflow uses cloud-API nodes (not self-hostable) · `3` something stayed unresolved (manifest still written).
@@ -88,8 +97,8 @@ sub-folder is preserved in `dest`, so ComfyUI's loader dropdown still lists the 
 
 ## Status
 
-0.1.0 - analyze / resolve / nodes / candidates. Next: `download` (resume + SHA-256 verify + bash
-script for pods), `verify` (safetensors header check), then UI→API `convert`. See
+0.1.0 - analyze / resolve / nodes / candidates / download / script / verify. Next: learned
+cache for live hits, hash-based lookup, then UI→API `convert`. See
 `Documentation/build-comfy-resolve/Plan.md`.
 
 ## License
