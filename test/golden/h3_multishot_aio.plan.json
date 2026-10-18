@@ -1,0 +1,39 @@
+{
+ "api_nodes": [],
+ "droppable_missing": [],
+ "models": [],
+ "nodes": [
+  {
+   "class": "LoadAudio",
+   "name": "ComfyUI-FishSpeech",
+   "url": "https://github.com/AIFSH/ComfyUI-FishSpeech"
+  }
+ ],
+ "self_hostable": true,
+ "total_gb": 0.0,
+ "unresolved_models": [
+  {
+   "dest": "vae",
+   "file": "minimax_h3_video_vae_fp16.safetensors"
+  },
+  {
+   "dest": "vae",
+   "file": "minimax_h3_audio_vae_fp32.safetensors"
+  },
+  {
+   "dest": "models",
+   "file": "MiniMax-H3-fl2va-Q5_1.gguf"
+  },
+  {
+   "dest": "models",
+   "file": "MiniMax-H3-encoder-Q5_K_M.gguf"
+  }
+ ],
+ "unresolved_nodes": [
+  "H3ClipLoaderAny",
+  "H3LoraStack",
+  "H3ModelLoaderAny",
+  "H3MultishotSampler",
+  "H3OptionalImage"
+ ]
+}

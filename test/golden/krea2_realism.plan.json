@@ -1,0 +1,51 @@
+{
+ "api_nodes": [],
+ "droppable_missing": [],
+ "models": [
+  {
+   "dest": "text_encoders",
+   "file": "qwen3vl_4b_fp8_scaled.safetensors",
+   "gb": 4,
+   "hf": "Comfy-Org/Krea-2",
+   "path": "text_encoders/qwen3vl_4b_fp8_scaled.safetensors",
+   "via": "lookup"
+  },
+  {
+   "dest": "vae",
+   "file": "qwen_image_vae.safetensors",
+   "gb": 0.25,
+   "hf": "Comfy-Org/Qwen-Image_ComfyUI",
+   "path": "split_files/vae/qwen_image_vae.safetensors",
+   "via": "lookup"
+  },
+  {
+   "dest": "loras",
+   "file": "realism_engine_krea2_v2.safetensors",
+   "gb": 0.3,
+   "hf": "uzumix/realism_engine_krea2_v2",
+   "path": "realism_engine_krea2_v2.safetensors",
+   "via": "lookup"
+  }
+ ],
+ "nodes": [
+  {
+   "class": "ResolutionSelector",
+   "name": "ResolutionSelector",
+   "url": "https://github.com/ComfyUI/ResolutionSelector"
+  },
+  {
+   "class": "Text",
+   "name": "ComfyUI_Text_Translation",
+   "url": "https://github.com/TFL-TFL/ComfyUI_Text_Translation"
+  }
+ ],
+ "self_hostable": true,
+ "total_gb": 4.55,
+ "unresolved_models": [
+  {
+   "dest": "diffusion_models",
+   "file": "krea2_turbo_fp8.safetensors"
+  }
+ ],
+ "unresolved_nodes": []
+}

@@ -1,0 +1,64 @@
+{
+ "api_nodes": [],
+ "droppable_missing": [
+  "Image Comparer (rgthree)"
+ ],
+ "models": [],
+ "nodes": [
+  {
+   "class": "CR Prompt Text",
+   "name": "ComfyUI_Comfyroll_CustomNodes",
+   "url": "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes"
+  },
+  {
+   "class": "DWPreprocessor",
+   "name": "comfyui_controlnet_aux",
+   "url": "https://github.com/Fannovel16/comfyui_controlnet_aux"
+  },
+  {
+   "class": "Seed (rgthree)",
+   "name": "ComfyUI_Swwan",
+   "url": "https://github.com/aining2022/ComfyUI_Swwan"
+  },
+  {
+   "class": "SeedVR2LoadDiTModel",
+   "name": "ComfyUI-PromptChain",
+   "url": "https://github.com/mobcat40/ComfyUI-PromptChain"
+  }
+ ],
+ "self_hostable": true,
+ "total_gb": 0.0,
+ "unresolved_models": [
+  {
+   "dest": "models",
+   "file": "ema_vae_fp16.safetensors"
+  },
+  {
+   "dest": "models",
+   "file": "seedvr2_ema_7b_fp8_e4m3fn_mixed_block35_fp16.safetensors"
+  },
+  {
+   "dest": "models",
+   "file": "yolox_l.onnx"
+  },
+  {
+   "dest": "models",
+   "file": "dw-ll_ucoco_384_bs5.torchscript.pt"
+  },
+  {
+   "dest": "checkpoints",
+   "file": "Qwen-Rapid-AIO-NSFW-v18.safetensors"
+  },
+  {
+   "dest": "loras",
+   "file": "Qwen-Image-Edit-F2P.safetensors"
+  },
+  {
+   "dest": "loras",
+   "file": "lenovo.safetensors"
+  }
+ ],
+ "unresolved_nodes": [
+  "JWStringConcat"
+ ]
+}

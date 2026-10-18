@@ -1,0 +1,29 @@
+{
+ "api_nodes": [],
+ "custom_nodes": [
+  "ResolutionSelector",
+  "Text"
+ ],
+ "format": "ui",
+ "has_load_image": false,
+ "models": [
+  {
+   "file": "qwen3vl_4b_fp8_scaled.safetensors",
+   "node": "CLIPLoader"
+  },
+  {
+   "file": "krea2_turbo_fp8.safetensors",
+   "node": "UNETLoader"
+  },
+  {
+   "file": "qwen_image_vae.safetensors",
+   "node": "VAELoader"
+  },
+  {
+   "file": "realism_engine_krea2_v2.safetensors",
+   "node": "LoraLoaderModelOnly"
+  }
+ ],
+ "node_count": 15,
+ "self_hostable": true
+}

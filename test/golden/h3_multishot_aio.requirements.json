@@ -1,0 +1,33 @@
+{
+ "api_nodes": [],
+ "custom_nodes": [
+  "H3ClipLoaderAny",
+  "H3LoraStack",
+  "H3ModelLoaderAny",
+  "H3MultishotSampler",
+  "H3OptionalImage",
+  "LoadAudio"
+ ],
+ "format": "ui",
+ "has_load_image": true,
+ "models": [
+  {
+   "file": "minimax_h3_video_vae_fp16.safetensors",
+   "node": "VAELoader"
+  },
+  {
+   "file": "minimax_h3_audio_vae_fp32.safetensors",
+   "node": "VAELoader"
+  },
+  {
+   "file": "MiniMax-H3-fl2va-Q5_1.gguf",
+   "node": "H3ModelLoaderAny"
+  },
+  {
+   "file": "MiniMax-H3-encoder-Q5_K_M.gguf",
+   "node": "H3ClipLoaderAny"
+  }
+ ],
+ "node_count": 13,
+ "self_hostable": true
+}

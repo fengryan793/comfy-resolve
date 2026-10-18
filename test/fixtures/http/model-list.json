@@ -1,0 +1,158 @@
+{
+ "models": [
+  {
+   "name": "stabilityai/Stable Cascade: text_encoder (CLIP)",
+   "type": "clip",
+   "base": "Stable Cascade",
+   "save_path": "text_encoders/Stable-Cascade",
+   "description": "Stable Cascade: text_encoder",
+   "reference": "https://huggingface.co/stabilityai/stable-cascade",
+   "filename": "model.safetensors",
+   "url": "https://huggingface.co/stabilityai/stable-cascade/resolve/main/text_encoder/model.safetensors",
+   "size": "1.39GB"
+  },
+  {
+   "name": "sd_xl_base_1.0.safetensors",
+   "type": "checkpoint",
+   "base": "SDXL",
+   "save_path": "checkpoints/SDXL",
+   "description": "Stable Diffusion XL base model",
+   "reference": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0",
+   "filename": "sd_xl_base_1.0.safetensors",
+   "url": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors",
+   "size": "6.94GB"
+  },
+  {
+   "name": "comfyanonymous/flux_text_encoders - t5xxl (fp16)",
+   "type": "clip",
+   "base": "t5",
+   "save_path": "text_encoders/t5",
+   "description": "Text Encoders for FLUX (fp16)",
+   "reference": "https://huggingface.co/comfyanonymous/flux_text_encoders",
+   "filename": "t5xxl_fp16.safetensors",
+   "url": "https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/t5xxl_fp16.safetensors",
+   "size": "9.79GB"
+  },
+  {
+   "name": "google-t5/t5-base",
+   "type": "clip",
+   "base": "t5-base",
+   "save_path": "text_encoders/t5-base",
+   "description": "T5 Base: Text-To-Text Transfer Transformer. This model can be loaded via CLIPLoader for Stable Audio workflow.",
+   "reference": "https://huggingface.co/google-t5/t5-base",
+   "filename": "model.safetensors",
+   "url": "https://huggingface.co/google-t5/t5-base/resolve/main/model.safetensors",
+   "size": "892MB"
+  },
+  {
+   "name": "Comfy-Org/clip_l",
+   "type": "clip",
+   "base": "clip",
+   "save_path": "default",
+   "description": "clip_l model (for SD1.x, SD2.x, SDXL, SD3.5, FLUX.1, HunyuanVideo, ...) ",
+   "reference": "https://huggingface.co/Comfy-Org/stable-diffusion-3.5-fp8",
+   "filename": "clip_l.safetensors",
+   "url": "https://huggingface.co/Comfy-Org/stable-diffusion-3.5-fp8/resolve/main/text_encoders/clip_l.safetensors",
+   "size": "246MB"
+  },
+  {
+   "name": "pulid_flux_v0.9.1.safetensors",
+   "type": "PuLID",
+   "base": "FLUX.1",
+   "save_path": "pulid",
+   "description": "This is required for PuLID (FLUX)",
+   "reference": "https://huggingface.co/guozinan/PuLID",
+   "filename": "pulid_flux_v0.9.1.safetensors",
+   "url": "https://huggingface.co/guozinan/PuLID/resolve/main/pulid_flux_v0.9.1.safetensors",
+   "size": "1.14GB"
+  },
+  {
+   "name": "Comfy-Org/Wan2.1 VAE",
+   "type": "vae",
+   "base": "Wan2.1",
+   "save_path": "vae",
+   "description": "Wan2.1 VAE model",
+   "reference": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+   "filename": "wan_2.1_vae.safetensors",
+   "url": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors",
+   "size": "254MB"
+  },
+  {
+   "name": "Comfy-Org/Wan2.2 i2v high noise 14B (fp8_scaled)",
+   "type": "diffusion_model",
+   "base": "Wan2.2",
+   "save_path": "diffusion_models/Wan2.2",
+   "description": "Wan2.2 diffusion model for i2v high noise 14B (fp8_scaled)",
+   "reference": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged",
+   "filename": "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
+   "url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/diffusion_models/wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
+   "size": "14.3GB"
+  },
+  {
+   "name": "Comfy-Org/Wan2.2 i2v low noise 14B (fp8_scaled)",
+   "type": "diffusion_model",
+   "base": "Wan2.2",
+   "save_path": "diffusion_models/Wan2.2",
+   "description": "Wan2.2 diffusion model for i2v low noise 14B (fp8_scaled)",
+   "reference": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged",
+   "filename": "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
+   "url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/diffusion_models/wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
+   "size": "14.3GB"
+  },
+  {
+   "name": "Comfy-Org/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+   "type": "clip",
+   "base": "umt5_xxl",
+   "save_path": "text_encoders",
+   "description": "umt5_xxl_fp8_e4m3fn_scaled text encoder for Wan2.1",
+   "reference": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+   "filename": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+   "url": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+   "size": "6.74GB"
+  },
+  {
+   "name": "Qwen-Image VAE",
+   "type": "VAE",
+   "base": "Qwen-Image",
+   "save_path": "vae/qwen-image",
+   "description": "VAE model for Qwen-Image",
+   "reference": "https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI",
+   "filename": "qwen_image_vae.safetensors",
+   "url": "https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors",
+   "size": "335MB"
+  },
+  {
+   "name": "Qwen 2.5 VL 7B Text Encoder (fp8_scaled)",
+   "type": "clip",
+   "base": "Qwen-2.5-VL",
+   "save_path": "text_encoders/qwen",
+   "description": "Qwen 2.5 VL 7B text encoder model (fp8_scaled)",
+   "reference": "https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI",
+   "filename": "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+   "url": "https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors",
+   "size": "3.75GB"
+  },
+  {
+   "name": "Qwen-Image Diffusion Model (fp8_e4m3fn)",
+   "type": "diffusion_model",
+   "base": "Qwen-Image",
+   "save_path": "diffusion_models/qwen-image",
+   "description": "Qwen-Image diffusion model (fp8_e4m3fn)",
+   "reference": "https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI",
+   "filename": "qwen_image_fp8_e4m3fn.safetensors",
+   "url": "https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_fp8_e4m3fn.safetensors",
+   "size": "4.89GB"
+  },
+  {
+   "name": "Qwen-Image-Lightning 8steps V1.0",
+   "type": "lora",
+   "base": "Qwen-Image",
+   "save_path": "loras/qwen-image-lightning",
+   "description": "Qwen-Image-Lightning 8-step LoRA model V1.0",
+   "reference": "https://huggingface.co/lightx2v/Qwen-Image-Lightning",
+   "filename": "Qwen-Image-Lightning-8steps-V1.0.safetensors",
+   "url": "https://huggingface.co/lightx2v/Qwen-Image-Lightning/resolve/main/Qwen-Image-Lightning-8steps-V1.0.safetensors",
+   "size": "9.78GB"
+  }
+ ]
+}

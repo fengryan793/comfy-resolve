@@ -1,0 +1,62 @@
+{
+ "api_nodes": [],
+ "droppable_missing": [
+  "Fast Groups Bypasser (rgthree)",
+  "Image Comparer (rgthree)"
+ ],
+ "models": [
+  {
+   "dest": "vae",
+   "file": "wan_2.1_vae.safetensors",
+   "gb": 0.25,
+   "hf": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged",
+   "path": "split_files/vae/wan_2.1_vae.safetensors",
+   "via": "lookup"
+  },
+  {
+   "dest": "diffusion_models",
+   "file": "krea2_turbo_fp8_scaled.safetensors",
+   "gb": 13.1,
+   "hf": "Comfy-Org/Krea-2",
+   "path": "diffusion_models/krea2_turbo_fp8_scaled.safetensors",
+   "via": "lookup"
+  },
+  {
+   "dest": "text_encoders",
+   "file": "qwen3vl_4b_fp8_scaled.safetensors",
+   "gb": 4,
+   "hf": "Comfy-Org/Krea-2",
+   "path": "text_encoders/qwen3vl_4b_fp8_scaled.safetensors",
+   "via": "lookup"
+  },
+  {
+   "dest": "loras",
+   "file": "krea2_identity_edit_v1_2_编辑模型.safetensors",
+   "gb": 1.8,
+   "hf": "conradlocke/krea2-identity-edit",
+   "path": "krea2_identity_edit_v1_2.safetensors",
+   "via": "lookup"
+  }
+ ],
+ "nodes": [
+  {
+   "class": "CR Text",
+   "name": "ComfyUI_Comfyroll_CustomNodes",
+   "url": "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes"
+  },
+  {
+   "class": "Krea2EditGroundedEncode",
+   "name": "comfyui-krea2edit",
+   "url": "https://github.com/lbouaraba/comfyui-krea2edit"
+  },
+  {
+   "class": "LayerUtility: ImageScaleByAspectRatio V2",
+   "name": "ComfyUI_Swwan",
+   "url": "https://github.com/aining2022/ComfyUI_Swwan"
+  }
+ ],
+ "self_hostable": true,
+ "total_gb": 19.150000000000002,
+ "unresolved_models": [],
+ "unresolved_nodes": []
+}

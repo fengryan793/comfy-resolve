@@ -1,0 +1,24 @@
+{
+ "api_nodes": [],
+ "custom_nodes": [
+  "ImageCASharpening+"
+ ],
+ "format": "ui",
+ "has_load_image": true,
+ "models": [
+  {
+   "file": "qwen_3_8b.safetensors",
+   "node": "CLIPLoader"
+  },
+  {
+   "file": "flux2-vae.safetensors",
+   "node": "VAELoader"
+  },
+  {
+   "file": "flux-2-klein-9b.safetensors",
+   "node": "UNETLoader"
+  }
+ ],
+ "node_count": 14,
+ "self_hostable": true
+}

@@ -1,0 +1,41 @@
+{
+ "api_nodes": [],
+ "custom_nodes": [
+  "FluxResolutionNode",
+  "easy cleanGpuUsed"
+ ],
+ "format": "ui",
+ "has_load_image": false,
+ "models": [
+  {
+   "file": "Qwen-Image-Lightning-8steps-V1.0.safetensors",
+   "node": "LoraLoaderModelOnly"
+  },
+  {
+   "file": "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+   "node": "CLIPLoader"
+  },
+  {
+   "file": "Kook_千问写实_Kook_Qwen_V2美人版.safetensors",
+   "node": "LoraLoaderModelOnly"
+  },
+  {
+   "file": "qwen_image_fp8_e4m3fn.safetensors",
+   "node": "UNETLoader"
+  },
+  {
+   "file": "qwen_image_vae.safetensors",
+   "node": "VAELoader"
+  },
+  {
+   "file": "Kook_千问写实_Kook_Qwen_V1稳定版.safetensors",
+   "node": "LoraLoaderModelOnly"
+  },
+  {
+   "file": "xiaowan.safetensors",
+   "node": "LoraLoaderModelOnly"
+  }
+ ],
+ "node_count": 17,
+ "self_hostable": true
+}

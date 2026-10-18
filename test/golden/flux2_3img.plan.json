@@ -1,0 +1,33 @@
+{
+ "api_nodes": [],
+ "droppable_missing": [],
+ "models": [
+  {
+   "dest": "diffusion_models",
+   "file": "flux2_dev_fp8mixed.safetensors",
+   "hf": "Comfy-Org/flux2-dev",
+   "path": "split_files/diffusion_models/flux2_dev_fp8mixed.safetensors",
+   "via": "org-index"
+  },
+  {
+   "dest": "text_encoders",
+   "file": "mistral_3_small_flux2_fp8.safetensors",
+   "hf": "Comfy-Org/flux2-dev",
+   "path": "split_files/text_encoders/mistral_3_small_flux2_fp8.safetensors",
+   "via": "org-index"
+  },
+  {
+   "dest": "vae",
+   "file": "flux2-vae.safetensors",
+   "gb": 0.3,
+   "hf": "Comfy-Org/flux2-klein",
+   "path": "split_files/vae/flux2-vae.safetensors",
+   "via": "lookup"
+  }
+ ],
+ "nodes": [],
+ "self_hostable": true,
+ "total_gb": 0.3,
+ "unresolved_models": [],
+ "unresolved_nodes": []
+}

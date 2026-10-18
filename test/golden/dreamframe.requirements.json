@@ -1,0 +1,38 @@
+{
+ "api_nodes": [],
+ "custom_nodes": [],
+ "format": "ui",
+ "has_load_image": true,
+ "models": [
+  {
+   "file": "wan_2.1_vae.safetensors",
+   "node": "VAELoader"
+  },
+  {
+   "file": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+   "node": "CLIPLoader"
+  },
+  {
+   "file": "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
+   "node": "UNETLoader"
+  },
+  {
+   "file": "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
+   "node": "UNETLoader"
+  },
+  {
+   "file": "wan2.2_i2v_lightx2v_4steps_lora_v1_low_noise.safetensors",
+   "node": "LoraLoaderModelOnly"
+  },
+  {
+   "file": "wan2.2_i2v_lightx2v_4steps_lora_v1_high_noise.safetensors",
+   "node": "LoraLoaderModelOnly"
+  },
+  {
+   "file": "sd_xl_base_1.0.safetensors",
+   "node": "CheckpointLoaderSimple"
+  }
+ ],
+ "node_count": 42,
+ "self_hostable": true
+}

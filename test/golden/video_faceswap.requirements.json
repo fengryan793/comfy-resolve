@@ -1,0 +1,23 @@
+{
+ "api_nodes": [],
+ "custom_nodes": [
+  "ReActorFaceSwap",
+  "VHS_LoadVideo",
+  "VHS_VideoCombine",
+  "VHS_VideoInfoSource"
+ ],
+ "format": "ui",
+ "has_load_image": true,
+ "models": [
+  {
+   "file": "inswapper_128.onnx",
+   "node": "ReActorFaceSwap"
+  },
+  {
+   "file": "codeformer-v0.1.0.pth",
+   "node": "ReActorFaceSwap"
+  }
+ ],
+ "node_count": 7,
+ "self_hostable": true
+}

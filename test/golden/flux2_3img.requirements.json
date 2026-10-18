@@ -1,0 +1,22 @@
+{
+ "api_nodes": [],
+ "custom_nodes": [],
+ "format": "ui",
+ "has_load_image": true,
+ "models": [
+  {
+   "file": "flux2_dev_fp8mixed.safetensors",
+   "node": "UNETLoader"
+  },
+  {
+   "file": "mistral_3_small_flux2_fp8.safetensors",
+   "node": "CLIPLoader"
+  },
+  {
+   "file": "flux2-vae.safetensors",
+   "node": "VAELoader"
+  }
+ ],
+ "node_count": 28,
+ "self_hostable": true
+}

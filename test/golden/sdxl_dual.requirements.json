@@ -1,0 +1,14 @@
+{
+ "api_nodes": [],
+ "custom_nodes": [],
+ "format": "ui",
+ "has_load_image": false,
+ "models": [
+  {
+   "file": "sd_xl_base_1.0.safetensors",
+   "node": "CheckpointLoaderSimple"
+  }
+ ],
+ "node_count": 11,
+ "self_hostable": true
+}

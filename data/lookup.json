@@ -1,0 +1,406 @@
+{
+ "_comment": "Curated model→source map, seeded from project Findings (all verified downloads). source: hf = {repo, path} | civitai = {version_id} | url. dest = ComfyUI models/ subdir.",
+ "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors": {
+  "hf": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged",
+  "path": "split_files/diffusion_models/wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
+  "dest": "diffusion_models",
+  "gb": 14.3
+ },
+ "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors": {
+  "hf": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged",
+  "path": "split_files/diffusion_models/wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
+  "dest": "diffusion_models",
+  "gb": 14.3
+ },
+ "wan2.2_t2v_high_noise_14B_fp8_scaled.safetensors": {
+  "hf": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged",
+  "path": "split_files/diffusion_models/wan2.2_t2v_high_noise_14B_fp8_scaled.safetensors",
+  "dest": "diffusion_models",
+  "gb": 14.3
+ },
+ "wan2.2_t2v_low_noise_14B_fp8_scaled.safetensors": {
+  "hf": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged",
+  "path": "split_files/diffusion_models/wan2.2_t2v_low_noise_14B_fp8_scaled.safetensors",
+  "dest": "diffusion_models",
+  "gb": 14.3
+ },
+ "wan2.2_i2v_lightx2v_4steps_lora_v1_high_noise.safetensors": {
+  "hf": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged",
+  "path": "split_files/loras/wan2.2_i2v_lightx2v_4steps_lora_v1_high_noise.safetensors",
+  "dest": "loras",
+  "gb": 1.2
+ },
+ "wan2.2_i2v_lightx2v_4steps_lora_v1_low_noise.safetensors": {
+  "hf": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged",
+  "path": "split_files/loras/wan2.2_i2v_lightx2v_4steps_lora_v1_low_noise.safetensors",
+  "dest": "loras",
+  "gb": 1.2
+ },
+ "wan2.2_t2v_lightx2v_4steps_lora_v1.1_high_noise.safetensors": {
+  "hf": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged",
+  "path": "split_files/loras/wan2.2_t2v_lightx2v_4steps_lora_v1.1_high_noise.safetensors",
+  "dest": "loras",
+  "gb": 0.6
+ },
+ "wan2.2_t2v_lightx2v_4steps_lora_v1.1_low_noise.safetensors": {
+  "hf": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged",
+  "path": "split_files/loras/wan2.2_t2v_lightx2v_4steps_lora_v1.1_low_noise.safetensors",
+  "dest": "loras",
+  "gb": 0.6
+ },
+ "umt5_xxl_fp8_e4m3fn_scaled.safetensors": {
+  "hf": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged",
+  "path": "split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+  "dest": "text_encoders",
+  "gb": 6.3
+ },
+ "wan_2.1_vae.safetensors": {
+  "hf": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged",
+  "path": "split_files/vae/wan_2.1_vae.safetensors",
+  "dest": "vae",
+  "gb": 0.25
+ },
+ "Wan2_2-I2V-A14B-HIGH_fp8_e4m3fn_scaled_KJ.safetensors": {
+  "hf": "Kijai/WanVideo_comfy_fp8_scaled",
+  "path": "I2V/Wan2_2-I2V-A14B-HIGH_fp8_e4m3fn_scaled_KJ.safetensors",
+  "dest": "diffusion_models",
+  "gb": 14
+ },
+ "Wan2_2-I2V-A14B-LOW_fp8_e4m3fn_scaled_KJ.safetensors": {
+  "hf": "Kijai/WanVideo_comfy_fp8_scaled",
+  "path": "I2V/Wan2_2-I2V-A14B-LOW_fp8_e4m3fn_scaled_KJ.safetensors",
+  "dest": "diffusion_models",
+  "gb": 14
+ },
+ "lightx2v_I2V_14B_480p_cfg_step_distill_rank256_bf16.safetensors": {
+  "hf": "Kijai/WanVideo_comfy",
+  "path": "Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank256_bf16.safetensors",
+  "dest": "loras",
+  "gb": 2.8
+ },
+ "wan2.2_i2v_A14b_high_noise_lora_rank64_lightx2v_4step_1022.safetensors": {
+  "hf": "lightx2v/Wan2.2-Distill-Loras",
+  "path": "wan2.2_i2v_A14b_high_noise_lora_rank64_lightx2v_4step_1022.safetensors",
+  "dest": "loras",
+  "gb": 0.6
+ },
+ "wan2.2_i2v_A14b_low_noise_lora_rank64_lightx2v_4step_1022.safetensors": {
+  "hf": "lightx2v/Wan2.2-Distill-Loras",
+  "path": "wan2.2_i2v_A14b_low_noise_lora_rank64_lightx2v_4step_1022.safetensors",
+  "dest": "loras",
+  "gb": 0.7
+ },
+ "ltxv-13b-0.9.8-distilled-fp8.safetensors": {
+  "hf": "Lightricks/LTX-Video",
+  "path": "ltxv-13b-0.9.8-distilled-fp8.safetensors",
+  "dest": "checkpoints",
+  "gb": 15
+ },
+ "t5xxl_fp8_e4m3fn.safetensors": {
+  "hf": "comfyanonymous/flux_text_encoders",
+  "path": "t5xxl_fp8_e4m3fn.safetensors",
+  "dest": "text_encoders",
+  "gb": 4.6
+ },
+ "sd3/t5xxl_fp8_e4m3fn.safetensors": {
+  "hf": "comfyanonymous/flux_text_encoders",
+  "path": "t5xxl_fp8_e4m3fn.safetensors",
+  "dest": "text_encoders/sd3",
+  "gb": 4.6
+ },
+ "clip_l.safetensors": {
+  "hf": "comfyanonymous/flux_text_encoders",
+  "path": "clip_l.safetensors",
+  "dest": "clip",
+  "gb": 0.24
+ },
+ "sd3/clip_l.safetensors": {
+  "hf": "comfyanonymous/flux_text_encoders",
+  "path": "clip_l.safetensors",
+  "dest": "clip/sd3",
+  "gb": 0.24
+ },
+ "ae.safetensors": {
+  "hf": "ffxvs/vae-flux",
+  "path": "ae.safetensors",
+  "dest": "vae",
+  "gb": 0.33
+ },
+ "qwen_image_fp8_e4m3fn.safetensors": {
+  "hf": "Comfy-Org/Qwen-Image_ComfyUI",
+  "path": "split_files/diffusion_models/qwen_image_fp8_e4m3fn.safetensors",
+  "dest": "diffusion_models",
+  "gb": 20
+ },
+ "qwen_2.5_vl_7b_fp8_scaled.safetensors": {
+  "hf": "Comfy-Org/Qwen-Image_ComfyUI",
+  "path": "split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors",
+  "dest": "text_encoders",
+  "gb": 9
+ },
+ "qwen_2.5_vl_7b.safetensors": {
+  "hf": "Comfy-Org/Qwen-Image_ComfyUI",
+  "path": "split_files/text_encoders/qwen_2.5_vl_7b.safetensors",
+  "dest": "text_encoders",
+  "gb": 16
+ },
+ "qwen_image_vae.safetensors": {
+  "hf": "Comfy-Org/Qwen-Image_ComfyUI",
+  "path": "split_files/vae/qwen_image_vae.safetensors",
+  "dest": "vae",
+  "gb": 0.25
+ },
+ "Qwen-Image-Lightning-8steps-V1.0.safetensors": {
+  "hf": "lightx2v/Qwen-Image-Lightning",
+  "path": "Qwen-Image-Lightning-8steps-V1.0.safetensors",
+  "dest": "loras",
+  "gb": 0.8
+ },
+ "Qwen-Image-Lightning-8steps-V2.0-bf16.safetensors": {
+  "hf": "lightx2v/Qwen-Image-Lightning",
+  "path": "Qwen-Image-Lightning-8steps-V2.0-bf16.safetensors",
+  "dest": "loras",
+  "gb": 0.8
+ },
+ "Qwen-Image-Edit-Lightning-8steps-V1.0.safetensors": {
+  "hf": "lightx2v/Qwen-Image-Lightning",
+  "path": "Qwen-Image-Edit-Lightning-8steps-V1.0.safetensors",
+  "dest": "loras",
+  "gb": 0.8
+ },
+ "Qwen-Image-Edit-2509-Lightning-8steps-V1.0-bf16.safetensors": {
+  "hf": "lightx2v/Qwen-Image-Lightning",
+  "path": "Qwen-Image-Edit-2509/Qwen-Image-Edit-2509-Lightning-8steps-V1.0-bf16.safetensors",
+  "dest": "loras",
+  "gb": 0.8
+ },
+ "krea2_turbo_fp8_scaled.safetensors": {
+  "hf": "Comfy-Org/Krea-2",
+  "path": "diffusion_models/krea2_turbo_fp8_scaled.safetensors",
+  "dest": "diffusion_models",
+  "gb": 13.1
+ },
+ "qwen3vl_4b_fp8_scaled.safetensors": {
+  "hf": "Comfy-Org/Krea-2",
+  "path": "text_encoders/qwen3vl_4b_fp8_scaled.safetensors",
+  "dest": "text_encoders",
+  "gb": 4
+ },
+ "krea2_darkbrush.safetensors": {
+  "hf": "Comfy-Org/Krea-2",
+  "path": "loras/krea2_darkbrush.safetensors",
+  "dest": "loras",
+  "gb": 0.3
+ },
+ "krea2_retroanime.safetensors": {
+  "hf": "Comfy-Org/Krea-2",
+  "path": "loras/krea2_retroanime.safetensors",
+  "dest": "loras",
+  "gb": 0.3
+ },
+ "krea2_identity_edit_v1_2_编辑模型.safetensors": {
+  "hf": "conradlocke/krea2-identity-edit",
+  "path": "krea2_identity_edit_v1_2.safetensors",
+  "dest": "loras",
+  "gb": 1.8
+ },
+ "realism_engine_krea2_v2.safetensors": {
+  "hf": "uzumix/realism_engine_krea2_v2",
+  "path": "realism_engine_krea2_v2.safetensors",
+  "dest": "loras",
+  "gb": 0.3
+ },
+ "flux-2-klein-4b.safetensors": {
+  "hf": "Comfy-Org/flux2-klein",
+  "path": "split_files/diffusion_models/flux-2-klein-4b.safetensors",
+  "dest": "diffusion_models",
+  "gb": 7.8
+ },
+ "flux-2-klein-9b.safetensors": {
+  "hf": "black-forest-labs/FLUX.2-klein-9B",
+  "path": "flux-2-klein-9b.safetensors",
+  "dest": "diffusion_models",
+  "gb": 18,
+  "note": "text encoder qwen_3_8b single-file NOT public; use 4b stack"
+ },
+ "qwen_3_4b.safetensors": {
+  "hf": "Comfy-Org/flux2-klein",
+  "path": "split_files/text_encoders/qwen_3_4b.safetensors",
+  "dest": "text_encoders",
+  "gb": 7.5
+ },
+ "flux2-vae.safetensors": {
+  "hf": "Comfy-Org/flux2-klein",
+  "path": "split_files/vae/flux2-vae.safetensors",
+  "dest": "vae",
+  "gb": 0.3
+ },
+ "sd_xl_base_1.0.safetensors": {
+  "hf": "stabilityai/stable-diffusion-xl-base-1.0",
+  "path": "sd_xl_base_1.0.safetensors",
+  "dest": "checkpoints",
+  "gb": 6.5
+ },
+ "RealVisXL_V5.0_fp16.safetensors": {
+  "hf": "SG161222/RealVisXL_V5.0",
+  "path": "RealVisXL_V5.0_fp16.safetensors",
+  "dest": "checkpoints",
+  "gb": 6.5
+ },
+ "ip-adapter.bin": {
+  "hf": "InstantX/InstantID",
+  "path": "ip-adapter.bin",
+  "dest": "instantid",
+  "gb": 1.6
+ },
+ "instantid_controlnet.safetensors": {
+  "hf": "InstantX/InstantID",
+  "path": "ControlNetModel/diffusion_pytorch_model.safetensors",
+  "dest": "controlnet",
+  "gb": 2.4
+ },
+ "1k3d68.onnx": {
+  "hf": "DIAMONIK7777/antelopev2",
+  "path": "1k3d68.onnx",
+  "dest": "insightface/models/antelopev2",
+  "gb": 0.14
+ },
+ "2d106det.onnx": {
+  "hf": "DIAMONIK7777/antelopev2",
+  "path": "2d106det.onnx",
+  "dest": "insightface/models/antelopev2",
+  "gb": 0.005
+ },
+ "genderage.onnx": {
+  "hf": "DIAMONIK7777/antelopev2",
+  "path": "genderage.onnx",
+  "dest": "insightface/models/antelopev2",
+  "gb": 0.001
+ },
+ "glintr100.onnx": {
+  "hf": "DIAMONIK7777/antelopev2",
+  "path": "glintr100.onnx",
+  "dest": "insightface/models/antelopev2",
+  "gb": 0.26
+ },
+ "scrfd_10g_bnkps.onnx": {
+  "hf": "DIAMONIK7777/antelopev2",
+  "path": "scrfd_10g_bnkps.onnx",
+  "dest": "insightface/models/antelopev2",
+  "gb": 0.017
+ },
+ "inswapper_128.onnx": {
+  "hf": "ezioruan/inswapper_128.onnx",
+  "path": "inswapper_128.onnx",
+  "dest": "insightface",
+  "gb": 0.55
+ },
+ "GFPGANv1.4.pth": {
+  "auto": "reactor-first-run",
+  "dest": "facerestore_models",
+  "gb": 0.33
+ },
+ "codeformer-v0.1.0.pth": {
+  "auto": "reactor-first-run",
+  "dest": "facerestore_models",
+  "gb": 0.36
+ },
+ "flux1-fill-dev-Q8_0.gguf": {
+  "hf": "YarvixPA/FLUX.1-Fill-dev-GGUF",
+  "path": "flux1-fill-dev-Q8_0.gguf",
+  "dest": "unet",
+  "gb": 12
+ },
+ "flux_ae.safetensors": {
+  "hf": "ffxvs/vae-flux",
+  "path": "ae.safetensors",
+  "dest": "vae",
+  "gb": 0.33
+ },
+ "wan22Remix_i2v_high_Q8.gguf": {
+  "hf": "huchukato/Wan2.2-Remix-I2V-v2.1-GGUF",
+  "path": "High/wan22RemixT2VI2V_i2vHighV21-Q8_0.gguf",
+  "dest": "unet",
+  "gb": 15,
+  "note": "NSFW-capable base"
+ },
+ "wan22Remix_i2v_low_Q8.gguf": {
+  "hf": "huchukato/Wan2.2-Remix-I2V-v2.1-GGUF",
+  "path": "Low/wan22RemixT2VI2V_i2vLowV21-Q8_0.gguf",
+  "dest": "unet",
+  "gb": 15,
+  "note": "NSFW-capable base"
+ },
+ "SVI_v2_PRO_Wan2.2-I2V-A14B_HIGH_lora_rank_128_fp16.safetensors": {
+  "hf": "Stottsteven/SVI_v2_PRO_Wan2.2-I2V-A14B_HIGH_lora_rank_128_fp16.safetensors",
+  "path": "SVI_v2_PRO_Wan2.2-I2V-A14B_HIGH_lora_rank_128_fp16.safetensors",
+  "dest": "loras",
+  "gb": 1.2
+ },
+ "SVI_v2_PRO_Wan2.2-I2V-A14B_LOW_lora_rank_128_fp16.safetensors": {
+  "hf": "alphaghost13/SVI_v2_PRO_Wan2.2-I2V-A14B_LOW_lora_rank_128_fp16",
+  "path": "SVI_v2_PRO_Wan2.2-I2V-A14B_LOW_lora_rank_128_fp16.safetensors",
+  "dest": "loras",
+  "gb": 1.2
+ },
+ "1GIRL_QWEN_V3.safetensors": {
+  "civitai": 2335968,
+  "dest": "loras",
+  "gb": 2.25
+ },
+ "Wan2.1 - lightx2v_I2V_14B_480p_cfg_step_distill_rank256_bf16.safetensors": {
+  "hf": "Kijai/WanVideo_comfy",
+  "path": "Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank256_bf16.safetensors",
+  "dest": "loras",
+  "gb": 0.6
+ },
+ "Wan2.2 - I2V_A14b_low_noise_lora_rank64_lightx2v_4step_1022.safetensors": {
+  "hf": "lightx2v/Wan2.2-Distill-Loras",
+  "path": "wan2.2_i2v_A14b_low_noise_lora_rank64_lightx2v_4step_1022.safetensors",
+  "dest": "loras",
+  "gb": 0.16
+ },
+ "Wan2.2 - I2V_A14b_high_noise_lora_rank64_lightx2v_4step_1022.safetensors": {
+  "hf": "lightx2v/Wan2.2-Distill-Loras",
+  "path": "wan2.2_i2v_A14b_high_noise_lora_rank64_lightx2v_4step_1022.safetensors",
+  "dest": "loras",
+  "gb": 0.16
+ },
+ "Wan2.2_Remix_NSFW_i2v_14b_high_lighting_v2.0.safetensors": {
+  "url": "https://huggingface.co/FX-FeiHou/wan2.2-Remix/resolve/main/NSFW/Wan2.2_Remix_NSFW_i2v_14b_high_lighting_v2.0.safetensors",
+  "dest": "diffusion_models",
+  "gb": 16
+ },
+ "Wan2.2_Remix_NSFW_i2v_14b_low_lighting_v2.0.safetensors": {
+  "url": "https://huggingface.co/FX-FeiHou/wan2.2-Remix/resolve/main/NSFW/Wan2.2_Remix_NSFW_i2v_14b_low_lighting_v2.0.safetensors",
+  "dest": "diffusion_models",
+  "gb": 16
+ },
+ "Wan2.2_Remix_NSFW_i2v_14b_high_lighting_fp8_e4m3fn_v3.0.safetensors": {
+  "url": "https://huggingface.co/FX-FeiHou/wan2.2-Remix/resolve/main/NSFW/Wan2.2_Remix_NSFW_i2v_14b_high_lighting_fp8_e4m3fn_v3.0.safetensors",
+  "dest": "diffusion_models",
+  "gb": 14
+ },
+ "Wan2.2_Remix_NSFW_i2v_14b_low_lighting_fp8_e4m3fn_v3.0.safetensors": {
+  "url": "https://huggingface.co/FX-FeiHou/wan2.2-Remix/resolve/main/NSFW/Wan2.2_Remix_NSFW_i2v_14b_low_lighting_fp8_e4m3fn_v3.0.safetensors",
+  "dest": "diffusion_models",
+  "gb": 14
+ },
+ "clip_vision_h_Comfy-Org.safetensors": {
+  "hf": "Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+  "path": "split_files/clip_vision/clip_vision_h.safetensors",
+  "dest": "clip_vision",
+  "gb": 1.2
+ },
+ "rife49.pth": {
+  "url": "https://huggingface.co/VMTamashii/rife49/resolve/main/rife49.pth",
+  "dest": "rife",
+  "gb": 0.05
+ },
+ "nsfw_wan_umt5-xxl_fp8_scaled.safetensors": {
+  "hf": "Osrivers/nsfw_wan_umt5-xxl_fp8_scaled.safetensors",
+  "path": "nsfw_wan_umt5-xxl_fp8_scaled.safetensors",
+  "dest": "text_encoders",
+  "gb": 5
+ }
+}

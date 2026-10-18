@@ -1,0 +1,39 @@
+{
+ "api_nodes": [],
+ "droppable_missing": [],
+ "models": [
+  {
+   "dest": "vae",
+   "file": "flux2-vae.safetensors",
+   "gb": 0.3,
+   "hf": "Comfy-Org/flux2-klein",
+   "path": "split_files/vae/flux2-vae.safetensors",
+   "via": "lookup"
+  },
+  {
+   "dest": "diffusion_models",
+   "file": "flux-2-klein-9b.safetensors",
+   "gb": 18,
+   "hf": "black-forest-labs/FLUX.2-klein-9B",
+   "note": "text encoder qwen_3_8b single-file NOT public; use 4b stack",
+   "path": "flux-2-klein-9b.safetensors",
+   "via": "lookup"
+  }
+ ],
+ "nodes": [
+  {
+   "class": "ImageCASharpening+",
+   "name": "ComfyUI_essentials",
+   "url": "https://github.com/cubiq/ComfyUI_essentials"
+  }
+ ],
+ "self_hostable": true,
+ "total_gb": 18.3,
+ "unresolved_models": [
+  {
+   "dest": "text_encoders",
+   "file": "qwen_3_8b.safetensors"
+  }
+ ],
+ "unresolved_nodes": []
+}

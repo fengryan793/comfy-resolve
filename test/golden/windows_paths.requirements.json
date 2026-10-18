@@ -1,0 +1,50 @@
+{
+ "api_nodes": [],
+ "custom_nodes": [
+  "CR Prompt Text",
+  "DWPreprocessor",
+  "Image Comparer (rgthree)",
+  "JWStringConcat",
+  "PlaySound|pysssss",
+  "Seed (rgthree)",
+  "SeedVR2LoadDiTModel",
+  "SeedVR2LoadVAEModel",
+  "SeedVR2VideoUpscaler",
+  "easy anythingIndexSwitch",
+  "easy promptList"
+ ],
+ "format": "ui",
+ "has_load_image": true,
+ "models": [
+  {
+   "file": "ema_vae_fp16.safetensors",
+   "node": "SeedVR2LoadVAEModel"
+  },
+  {
+   "file": "seedvr2_ema_7b_fp8_e4m3fn_mixed_block35_fp16.safetensors",
+   "node": "SeedVR2LoadDiTModel"
+  },
+  {
+   "file": "yolox_l.onnx",
+   "node": "DWPreprocessor"
+  },
+  {
+   "file": "dw-ll_ucoco_384_bs5.torchscript.pt",
+   "node": "DWPreprocessor"
+  },
+  {
+   "file": "Qwen-Rapid-AIO-NSFW-v18.safetensors",
+   "node": "CheckpointLoaderSimple"
+  },
+  {
+   "file": "Qwen-Image-Edit-F2P.safetensors",
+   "node": "LoraLoader"
+  },
+  {
+   "file": "lenovo.safetensors",
+   "node": "LoraLoader"
+  }
+ ],
+ "node_count": 51,
+ "self_hostable": true
+}

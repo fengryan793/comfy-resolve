@@ -1,0 +1,62 @@
+{
+ "api_nodes": [],
+ "droppable_missing": [],
+ "models": [
+  {
+   "dest": "loras",
+   "file": "Qwen-Image-Lightning-8steps-V1.0.safetensors",
+   "gb": 0.8,
+   "hf": "lightx2v/Qwen-Image-Lightning",
+   "path": "Qwen-Image-Lightning-8steps-V1.0.safetensors",
+   "via": "lookup"
+  },
+  {
+   "dest": "text_encoders",
+   "file": "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+   "gb": 9,
+   "hf": "Comfy-Org/Qwen-Image_ComfyUI",
+   "path": "split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors",
+   "via": "lookup"
+  },
+  {
+   "dest": "diffusion_models",
+   "file": "qwen_image_fp8_e4m3fn.safetensors",
+   "gb": 20,
+   "hf": "Comfy-Org/Qwen-Image_ComfyUI",
+   "path": "split_files/diffusion_models/qwen_image_fp8_e4m3fn.safetensors",
+   "via": "lookup"
+  },
+  {
+   "dest": "vae",
+   "file": "qwen_image_vae.safetensors",
+   "gb": 0.25,
+   "hf": "Comfy-Org/Qwen-Image_ComfyUI",
+   "path": "split_files/vae/qwen_image_vae.safetensors",
+   "via": "lookup"
+  }
+ ],
+ "nodes": [
+  {
+   "class": "FluxResolutionNode",
+   "name": "ComfyUI-Image-Size-Tools",
+   "url": "https://github.com/TheLustriVA/ComfyUI-Image-Size-Tools"
+  }
+ ],
+ "self_hostable": true,
+ "total_gb": 30.05,
+ "unresolved_models": [
+  {
+   "dest": "loras",
+   "file": "Kook_千问写实_Kook_Qwen_V2美人版.safetensors"
+  },
+  {
+   "dest": "loras",
+   "file": "Kook_千问写实_Kook_Qwen_V1稳定版.safetensors"
+  },
+  {
+   "dest": "loras",
+   "file": "xiaowan.safetensors"
+  }
+ ],
+ "unresolved_nodes": []
+}

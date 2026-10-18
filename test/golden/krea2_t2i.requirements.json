@@ -1,0 +1,29 @@
+{
+ "api_nodes": [],
+ "custom_nodes": [
+  "PreviewAny",
+  "TextGenerate"
+ ],
+ "format": "ui",
+ "has_load_image": false,
+ "models": [
+  {
+   "file": "krea2_turbo_fp8_scaled.safetensors",
+   "node": "UNETLoader"
+  },
+  {
+   "file": "qwen3vl_4b_fp8_scaled.safetensors",
+   "node": "CLIPLoader"
+  },
+  {
+   "file": "qwen_image_vae.safetensors",
+   "node": "VAELoader"
+  },
+  {
+   "file": "krea2_darkbrush.safetensors",
+   "node": "LoraLoaderModelOnly"
+  }
+ ],
+ "node_count": 26,
+ "self_hostable": true
+}

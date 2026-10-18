@@ -1,0 +1,12 @@
+{
+ "api_nodes": [
+  "RH_Captioner"
+ ],
+ "droppable_missing": [],
+ "models": [],
+ "nodes": [],
+ "self_hostable": false,
+ "total_gb": 0.0,
+ "unresolved_models": [],
+ "unresolved_nodes": []
+}

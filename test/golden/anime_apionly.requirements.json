@@ -1,0 +1,54 @@
+{
+ "api_nodes": [
+  "RH_Captioner"
+ ],
+ "custom_nodes": [
+  "ApplyPulidFlux",
+  "FluxResolutionNode",
+  "JjkText",
+  "Label (rgthree)",
+  "PulidEvaClipLoader",
+  "PulidFluxModelLoader",
+  "PulidInsightFaceLoader",
+  "ShowText|pysssss",
+  "TextCombinerTwo"
+ ],
+ "format": "ui",
+ "has_load_image": true,
+ "models": [
+  {
+   "file": "pulid_flux_v0.9.1.safetensors",
+   "node": "PulidFluxModelLoader"
+  },
+  {
+   "file": "google--siglip-so400m-patch14-384/model.safetensors",
+   "node": "CLIPVisionLoader"
+  },
+  {
+   "file": "flux1-redux-dev.safetensors",
+   "node": "StyleModelLoader"
+  },
+  {
+   "file": "flux1-dev-fp8-Kijai.safetensors",
+   "node": "UNETLoader"
+  },
+  {
+   "file": "sd3/t5xxl_fp16.safetensors",
+   "node": "DualCLIPLoader"
+  },
+  {
+   "file": "sd3/clip_l.safetensors",
+   "node": "DualCLIPLoader"
+  },
+  {
+   "file": "ae.sft",
+   "node": "VAELoader"
+  },
+  {
+   "file": "【F.1】2D美式卡通游戏插画风格_v1.safetensors",
+   "node": "LoraLoaderModelOnly"
+  }
+ ],
+ "node_count": 30,
+ "self_hostable": false
+}

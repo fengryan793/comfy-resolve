@@ -1,0 +1,19 @@
+{
+ "api_nodes": [],
+ "droppable_missing": [],
+ "models": [
+  {
+   "dest": "checkpoints",
+   "file": "sd_xl_base_1.0.safetensors",
+   "gb": 6.5,
+   "hf": "stabilityai/stable-diffusion-xl-base-1.0",
+   "path": "sd_xl_base_1.0.safetensors",
+   "via": "lookup"
+  }
+ ],
+ "nodes": [],
+ "self_hostable": true,
+ "total_gb": 6.5,
+ "unresolved_models": [],
+ "unresolved_nodes": []
+}

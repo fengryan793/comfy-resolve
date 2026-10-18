@@ -1,0 +1,34 @@
+{
+ "api_nodes": [],
+ "custom_nodes": [
+  "CR Text",
+  "Fast Groups Bypasser (rgthree)",
+  "Image Comparer (rgthree)",
+  "Krea2EditGroundedEncode",
+  "Krea2EditModelPatch",
+  "LayerUtility: ImageScaleByAspectRatio V2",
+  "easy imageSize"
+ ],
+ "format": "ui",
+ "has_load_image": true,
+ "models": [
+  {
+   "file": "wan_2.1_vae.safetensors",
+   "node": "VAELoader"
+  },
+  {
+   "file": "krea2_turbo_fp8_scaled.safetensors",
+   "node": "UNETLoader"
+  },
+  {
+   "file": "qwen3vl_4b_fp8_scaled.safetensors",
+   "node": "CLIPLoader"
+  },
+  {
+   "file": "krea2_identity_edit_v1_2_编辑模型.safetensors",
+   "node": "LoraLoaderModelOnly"
+  }
+ ],
+ "node_count": 22,
+ "self_hostable": true
+}

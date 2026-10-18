@@ -1,0 +1,32 @@
+{
+ "api_nodes": [],
+ "droppable_missing": [],
+ "models": [
+  {
+   "dest": "insightface",
+   "file": "inswapper_128.onnx",
+   "gb": 0.55,
+   "hf": "ezioruan/inswapper_128.onnx",
+   "path": "inswapper_128.onnx",
+   "via": "lookup"
+  },
+  {
+   "auto": "reactor-first-run",
+   "dest": "facerestore_models",
+   "file": "codeformer-v0.1.0.pth",
+   "gb": 0.36,
+   "via": "lookup"
+  }
+ ],
+ "nodes": [
+  {
+   "class": "ReActorFaceSwap",
+   "name": "ComfyUI-ReActor",
+   "url": "https://github.com/Gourieff/ComfyUI-ReActor"
+  }
+ ],
+ "self_hostable": true,
+ "total_gb": 0.91,
+ "unresolved_models": [],
+ "unresolved_nodes": []
+}

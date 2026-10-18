@@ -1,0 +1,427 @@
+{
+ "https://github.com/AIFSH/ComfyUI-FishSpeech": [
+  [
+   "LoadAudio"
+  ],
+  {
+   "title_aux": "ComfyUI-FishSpeech"
+  }
+ ],
+ "https://github.com/AIFSH/ComfyUI-GPT_SoVITS": [
+  [
+   "LoadAudio"
+  ],
+  {
+   "title_aux": "ComfyUI-GPT_SoVITS"
+  }
+ ],
+ "https://github.com/AIFSH/ComfyUI-Hallo": [
+  [
+   "LoadAudio"
+  ],
+  {
+   "title_aux": "ComfyUI-Hallo"
+  }
+ ],
+ "https://github.com/AIFSH/ComfyUI-Live2DViewer": [
+  [
+   "LoadAudio"
+  ],
+  {
+   "title_aux": "ComfyUI-Live2DViewer"
+  }
+ ],
+ "https://github.com/AIFSH/ComfyUI-RVC": [
+  [
+   "LoadAudio"
+  ],
+  {
+   "title_aux": "ComfyUI-RVC"
+  }
+ ],
+ "https://github.com/ComfyUI/ResolutionSelector": [
+  [
+   "ResolutionSelector"
+  ],
+  {}
+ ],
+ "https://github.com/Fannovel16/comfyui_controlnet_aux": [
+  [
+   "DWPreprocessor"
+  ],
+  {
+   "preemptions": [
+    "AIO_Preprocessor",
+    "AnimalPosePreprocessor",
+    "AnimeFace_SemSegPreprocessor",
+    "AnimeLineArtPreprocessor",
+    "BAE-NormalMapPreprocessor",
+    "BinaryPreprocessor",
+    "CannyEdgePreprocessor",
+    "ColorPreprocessor",
+    "DSINE-NormalMapPreprocessor",
+    "DWPreprocessor",
+    "DensePosePreprocessor",
+    "DepthAnythingPreprocessor",
+    "DiffusionEdge_Preprocessor",
+    "FacialPartColoringFromPoseKps",
+    "FakeScribblePreprocessor",
+    "HEDPreprocessor",
+    "HintImageEnchance",
+    "ImageGenResolutionFromImage",
+    "ImageGenResolutionFromLatent",
+    "ImageIntensityDetector",
+    "ImageLuminanceDetector",
+    "InpaintPreprocessor",
+    "LeReS-DepthMapPreprocessor",
+    "LineArtPreprocessor",
+    "LineartStandardPreprocessor",
+    "M-LSDPreprocessor",
+    "Manga2Anime_LineArt_Preprocessor",
+    "MaskOptFlow",
+    "MediaPipe-FaceMeshPreprocessor",
+    "MeshGraphormer-DepthMapPreprocessor",
+    "MiDaS-DepthMapPreprocessor",
+    "MiDaS-NormalMapPreprocessor",
+    "OneFormer-ADE20K-SemSegPreprocessor",
+    "OneFormer-COCO-SemSegPreprocessor",
+    "OpenposePreprocessor",
+    "PiDiNetPreprocessor",
+    "PixelPerfectResolution",
+    "SAMPreprocessor",
+    "SavePoseKpsAsJsonFile",
+    "ScribblePreprocessor",
+    "Scribble_XDoG_Preprocessor",
+    "SemSegPreprocessor",
+    "ShufflePreprocessor",
+    "TEEDPreprocessor",
+    "TilePreprocessor",
+    "UniFormer-SemSegPreprocessor",
+    "Unimatch_OptFlowPreprocessor",
+    "Zoe-DepthMapPreprocessor",
+    "Zoe_DepthAnythingPreprocessor"
+   ],
+   "title_aux": "ComfyUI's ControlNet Auxiliary Preprocessors"
+  }
+ ],
+ "https://github.com/Gourieff/ComfyUI-ReActor": [
+  [
+   "ReActorFaceSwap"
+  ],
+  {
+   "title_aux": "comfyui-reactor-node"
+  }
+ ],
+ "https://github.com/KY-2000/ComfyUI_PuLID_Flux_ll_FaceNet": [
+  [
+   "ApplyPulidFlux",
+   "PulidFluxModelLoader"
+  ],
+  {
+   "title_aux": "ComfyUI_PuLID_Flux_ll_FaceNet"
+  }
+ ],
+ "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite": [
+  [
+   "VHS_LoadVideo",
+   "VHS_VideoCombine",
+   "VHS_VideoInfoSource"
+  ],
+  {
+   "title_aux": "ComfyUI-VideoHelperSuite"
+  }
+ ],
+ "https://github.com/MNeMoNiCuZ/ComfyUI-mnemic-nodes": [
+  [
+   "ResolutionSelector"
+  ],
+  {
+   "title_aux": "ComfyUI-mnemic-nodes"
+  }
+ ],
+ "https://github.com/PaoloC68/ComfyUI-PuLID-Flux-Chroma": [
+  [
+   "ApplyPulidFlux",
+   "PulidFluxModelLoader"
+  ],
+  {
+   "nodename_pattern": "PulidFlux",
+   "preemptions": [
+    "ApplyPulidFlux",
+    "PulidFluxModelLoader",
+    "PulidFluxInsightFaceLoader",
+    "PulidFluxEvaClipLoader"
+   ],
+   "title_aux": "ComfyUI-PuLID-Flux-Chroma"
+  }
+ ],
+ "https://github.com/ShmuelRonen/ComfyUI_wav2lip": [
+  [
+   "LoadAudio"
+  ],
+  {
+   "title_aux": "Wav2Lip Node for ComfyUI"
+  }
+ ],
+ "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes": [
+  [
+   "CR Prompt Text",
+   "CR Text"
+  ],
+  {
+   "author": "Suzie1",
+   "description": "175 custom nodes for artists, designers and animators.",
+   "nickname": "Comfyroll Studio",
+   "title": "Comfyroll Studio",
+   "title_aux": "Comfyroll Studio"
+  }
+ ],
+ "https://github.com/TFL-TFL/ComfyUI_Text_Translation": [
+  [
+   "Text"
+  ],
+  {
+   "title_aux": "ComfyUI_Text_Translation"
+  }
+ ],
+ "https://github.com/TheLustriVA/ComfyUI-Image-Size-Tools": [
+  [
+   "FluxResolutionNode"
+  ],
+  {
+   "title_aux": "ComfyUI Image Size Tool"
+  }
+ ],
+ "https://github.com/Yuan-ManX/ComfyUI-SoundHub": [
+  [
+   "LoadAudio"
+  ],
+  {
+   "title_aux": "ComfyUI-SoundHub"
+  }
+ ],
+ "https://github.com/ai-shizuka/ComfyUI-tbox": [
+  [
+   "DWPreprocessor"
+  ],
+  {
+   "author": "tstandley",
+   "title_aux": "ComfyUI-tbox"
+  }
+ ],
+ "https://github.com/aining2022/ComfyUI_Swwan": [
+  [
+   "LayerUtility: ImageScaleByAspectRatio V2",
+   "Seed (rgthree)"
+  ],
+  {
+   "title_aux": "ComfyUI_Swwan"
+  }
+ ],
+ "https://github.com/chflame163/ComfyUI_LayerStyle": [
+  [
+   "LayerUtility: ImageScaleByAspectRatio V2"
+  ],
+  {
+   "author": "chflame",
+   "description": "A set of nodes for ComfyUI that can composite layer and mask to achieve Photoshop like functionality.",
+   "nickname": "LayerStyle",
+   "title": "LayerStyle",
+   "title_aux": "ComfyUI Layer Style"
+  }
+ ],
+ "https://github.com/comfy-deploy/comfyui-llm-toolkit": [
+  [
+   "ResolutionSelector"
+  ],
+  {
+   "author": "ComfyDeploy",
+   "description": "llm toolkit",
+   "nickname": "llm_toolkit",
+   "title": "llm toolkit",
+   "title_aux": "ComfyUI LLM Toolkit"
+  }
+ ],
+ "https://github.com/comfyanonymous/ComfyUI": [
+  [
+   "LoadAudio",
+   "PreviewAny",
+   "ResolutionSelector",
+   "TextGenerate"
+  ],
+  {
+   "title_aux": "ComfyUI"
+  }
+ ],
+ "https://github.com/cubiq/ComfyUI_essentials": [
+  [
+   "ImageCASharpening+"
+  ],
+  {
+   "title_aux": "ComfyUI Essentials"
+  }
+ ],
+ "https://github.com/cubiq/PuLID_ComfyUI": [
+  [
+   "PulidEvaClipLoader",
+   "PulidInsightFaceLoader"
+  ],
+  {
+   "title_aux": "PuLID_ComfyUI"
+  }
+ ],
+ "https://github.com/danielwolber-wood/ComfyUI-QuickResolutionSelector": [
+  [
+   "ResolutionSelector"
+  ],
+  {
+   "title_aux": "ComfyUI-QuickResolutionSelector"
+  }
+ ],
+ "https://github.com/gseth/ControlAltAI-Nodes": [
+  [
+   "FluxResolutionNode"
+  ],
+  {
+   "title_aux": "ControlAltAI Nodes"
+  }
+ ],
+ "https://github.com/jjkramhoeft/ComfyUI-Jjk-Nodes": [
+  [
+   "JjkText"
+  ],
+  {
+   "title_aux": "ComfyUI-Jjk-Nodes"
+  }
+ ],
+ "https://github.com/kk8bit/KayTool": [
+  [
+   "Text"
+  ],
+  {
+   "title_aux": "KayTool"
+  }
+ ],
+ "https://github.com/lbouaraba/comfyui-krea2edit": [
+  [
+   "Krea2EditGroundedEncode",
+   "Krea2EditModelPatch"
+  ],
+  {
+   "title_aux": "Krea 2 Identity Edit"
+  }
+ ],
+ "https://github.com/lldacing/ComfyUI_PuLID_Flux_ll": [
+  [
+   "ApplyPulidFlux",
+   "PulidFluxModelLoader"
+  ],
+  {
+   "title_aux": "ComfyUI_PuLID_Flux_ll"
+  }
+ ],
+ "https://github.com/mirabarukaso/ComfyUI_Mira": [
+  [
+   "TextCombinerTwo"
+  ],
+  {
+   "title_aux": "ComfyUI_Mira"
+  }
+ ],
+ "https://github.com/mobcat40/ComfyUI-PromptChain": [
+  [
+   "ApplyPulidFlux",
+   "PulidEvaClipLoader",
+   "PulidFluxModelLoader",
+   "PulidInsightFaceLoader",
+   "SeedVR2LoadDiTModel",
+   "SeedVR2LoadVAEModel",
+   "SeedVR2VideoUpscaler"
+  ],
+  {
+   "title_aux": "ComfyUI-PromptChain"
+  }
+ ],
+ "https://github.com/mudknight/comfyui-mudknight-utils": [
+  [
+   "ResolutionSelector"
+  ],
+  {
+   "title_aux": "comfyui-mudknight-utils"
+  }
+ ],
+ "https://github.com/numz/ComfyUI-SeedVR2_VideoUpscaler": [
+  [
+   "SeedVR2LoadDiTModel",
+   "SeedVR2LoadVAEModel",
+   "SeedVR2VideoUpscaler"
+  ],
+  {
+   "title_aux": "ComfyUI-SeedVR2_VideoUpscaler"
+  }
+ ],
+ "https://github.com/olduvai-jp/ComfyUI-S3-IO": [
+  [
+   "VHS_LoadVideo",
+   "VHS_VideoCombine",
+   "VHS_VideoInfoSource"
+  ],
+  {
+   "title_aux": "ComfyUI-S3-IO"
+  }
+ ],
+ "https://github.com/pictorialink/ComfyUI-Text-Translation": [
+  [
+   "Text"
+  ],
+  {
+   "title_aux": "ComfyUI-Text-Translation"
+  }
+ ],
+ "https://github.com/pythongosssss/ComfyUI-Custom-Scripts": [
+  [
+   "PlaySound|pysssss",
+   "ShowText|pysssss"
+  ],
+  {
+   "title_aux": "ComfyUI-Custom-Scripts"
+  }
+ ],
+ "https://github.com/rookiestar28/ComfyUI-RookieUI": [
+  [
+   "TextGenerate"
+  ],
+  {
+   "title_aux": "ComfyUI-RookieUI"
+  }
+ ],
+ "https://github.com/sipie800/ComfyUI-PuLID-Flux-Enhanced": [
+  [
+   "ApplyPulidFlux",
+   "PulidFluxModelLoader"
+  ],
+  {
+   "title_aux": "ComfyUI-PuLID-Flux-Enhanced"
+  }
+ ],
+ "https://github.com/yashikawa3/ComfyUI-PuLID": [
+  [
+   "PulidEvaClipLoader",
+   "PulidInsightFaceLoader"
+  ],
+  {
+   "title_aux": "ComfyUI-PuLID"
+  }
+ ],
+ "https://github.com/yolain/ComfyUI-Easy-Use": [
+  [
+   "easy anythingIndexSwitch",
+   "easy cleanGpuUsed",
+   "easy imageSize",
+   "easy promptList"
+  ],
+  {
+   "title_aux": "ComfyUI Easy Use"
+  }
+ ]
+}
