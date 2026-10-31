@@ -33,3 +33,20 @@
   Range-capable HTTP server; first CI run on GitHub was green.
 - Live smoke of the online path (Manager + HF index + HF search + candidates) passed; see Verification.
 - Next: M5 (README polish, CHANGELOG, `npm publish --dry-run`, 0.1.0), then M6 dogfood.
+
+## 2026-10-31 - M5 publish
+
+- Ryan created a granular npm token (Token1, 90 days, read/write all packages, Bypass 2FA NOT
+  ticked) via npmjs.com himself; stored it in the macOS Keychain
+  (`security add-generic-password -a fengryan793 -s npm-token-fengryan793`) instead of ~/.npmrc.
+- Publish command (token read from Keychain at run time, nothing written to disk):
+  `npm publish --access public --//registry.npmjs.org/:_authToken="$(security find-generic-password -a fengryan793 -s npm-token-fengryan793 -w)"`.
+  Because the token lacks Bypass 2FA npm still opened a `/auth/cli/<id>` web-auth step; Ryan
+  approved it in his real Chrome right after passing 2FA there, and the publish went through:
+  `+ comfy-resolve@0.1.0`, "Your package is being processed and may take a few minutes".
+- Registry immediately after: `dist-tags.latest = 0.0.0-stage`, a stub "Temporary package
+  placeholder for staged publishing" - npm's staged-publishing holding version. See Findings.
+- Tagged `v0.1.0` (annotated, on d796431) and pushed to origin.
+- Earlier false starts the same day: running the command with the literal `npm_xxx` placeholder
+  gives `E404 PUT .../comfy-resolve` (npm answers an invalid token with 404, not 401); the
+  granular-token form rejects "Organizations: read/write" with no org selected - set it to No access.

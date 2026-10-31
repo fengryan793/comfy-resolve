@@ -30,3 +30,14 @@
   `candidates "Wan-Lighting\Wan2.1 - lightx2v_...rank256_bf16.safetensors"` returned the bundled
   exact hit (Kijai/WanVideo_comfy) in 1 s plus 5 browse guesses. PASS.
 - Live Civitai path exercised only indirectly (no civitai hit in that run). PARTIAL.
+
+## 2026-10-31 - M5
+
+- prepublishOnly ran typecheck + 38/38 tests + tsup build in the publish; tarball 95.7 kB,
+  9 files (LICENSE, README, data/lookup.json, dist/*). PASS.
+- `npm publish` returned `+ comfy-resolve@0.1.0`. PASS.
+- `npm view comfy-resolve version` -> `0.0.0-stage` (staged-publishing stub); 0.1.0 not yet
+  installable at the time of writing. PENDING - re-check with `npm view comfy-resolve versions`.
+- Tag v0.1.0 pushed: `git ls-remote --tags origin` lists refs/tags/v0.1.0 -> d796431. PASS.
+- Not done: GitHub release, deleting the token on npmjs after use (token has no Bypass 2FA, so it
+  is of limited use for future publishes anyway).

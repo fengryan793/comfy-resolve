@@ -37,3 +37,14 @@
 - `cm-cli` (ComfyUI-Manager CLI): install/uninstall/update/snapshot of *named* packs; no command
   reads a workflow file; nothing for models.
 - npm names `comfy-resolve`, `comfyresolve`, `comfy-manifest`, `comfy-assets` all 404 (free).
+
+## 2026-10-31 - npm staged publishing
+
+- A first publish of a new package name now lands as `0.0.0-stage` (stub: true) with the real
+  version "submitted for review and awaiting a staged release". `npm view comfy-resolve version`
+  therefore prints `0.0.0-stage` until the review completes; `npm install comfy-resolve` would
+  install the stub. Ryan's Staged Packages page showed nothing waiting for *his* approval, so this
+  is npm-side review, not a maintainer step.
+- npm answers an invalid/placeholder auth token with `E404 PUT` on publish and `401` on whoami.
+- A granular token without "Bypass 2FA" still triggers the `/auth/cli` web-auth escalation on
+  publish; the tokens page shows the Bypass 2FA column empty for such tokens.
