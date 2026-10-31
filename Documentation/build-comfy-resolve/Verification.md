@@ -44,3 +44,6 @@
 - 2026-10-31 ~20:40 UTC re-check: `npm view comfy-resolve versions dist-tags` -> versions
   ["0.0.0-stage","0.1.0"], latest = 0.1.0; npmjs.com package page shows "0.1.0 • Public •
   Published a few seconds ago". The staging hold cleared by itself within ~6 minutes. PASS.
+- GitHub `releases/latest` -> v0.1.0, draft=false. PASS.
+- `npx -y comfy-resolve@0.1.0 --help` (exit 0) and `analyze klein_upscale.json --json` from an
+  empty npm cache produced the expected output. PASS.

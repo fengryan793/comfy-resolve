@@ -50,3 +50,7 @@
 - Earlier false starts the same day: running the command with the literal `npm_xxx` placeholder
   gives `E404 PUT .../comfy-resolve` (npm answers an invalid token with 404, not 401); the
   granular-token form rejects "Organizations: read/write" with no org selected - set it to No access.
+- GitHub release v0.1.0 created from the CHANGELOG section via the REST API with Ryan's PAT:
+  https://github.com/fengryan793/comfy-resolve/releases/tag/v0.1.0 (the github_ryan MCP has no
+  create-release tool). Smoke test `npx -y comfy-resolve@0.1.0 --help` / `analyze` passed from a
+  clean cache. M5 complete.
